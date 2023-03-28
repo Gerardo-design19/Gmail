@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Product Sans';
+	src: url('../assets/Fonts/Product\ Sans\ Regular.ttf') format('ttf');
+  }
+
+:root {
+
+    /* ==== FONTS ==== */
+    --font: 'Product Sans';
+	--font-m: 1rem;
+    /* ==== COLORES ==== */
+    --black: #202124;
+    --grey: #3c4043;
+    --light-grey: #5f6368;
+    --red: #d93025;
+	--background: #1F2022;
+  
+  }
+
+/* ==== GLOBAL ==== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	background-color: var(--background);
+}
+
+html,
+body {
+	font-size: 16px;
+	font-family: var(--font);
+	color: var(--black);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+/* ---- BTN ---- */
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 40px;
+	height: 40px;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	padding: 0;
+	margin: 0 2px;
+	outline: none;
+	z-index: 3;
+}
+
+.btn-alt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background: none;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	padding: 0 4px;
+	outline: none;
+}
+
+.btn-nofill{
+	background-color: var(--grey);
+}
+.btn-sm {
+	width: 18px;
+	padding: 0;
+	margin-left: -3px;
+	outline: none;
+	fill: white;
+}
+
+.btn-lg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background: none;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	padding: 0 2px;
+	outline: none;
+	fill: white;
+}
+
+.icons-search, .icons-drop{
+	background-color: var(--grey);
+}
+
+.btn-icon {
+	display: block;
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: 999px;
+	fill: white;
+}
+
+.btn-icon-sm {
+	height: 20px;
+	width: 20px;
+	border-radius: 0;
+	fill: white;
+}
+
+.btn-icon-alt {
+	opacity: var(--opacity);
+	fill: white;
+}
+
+.btn-icon .btn-icon-alt{
+ fill: white;
+}
+
+.btn-icon-btn-icon-alt-search, .btn-icon-btn-icon-alt-drop {
+	fill: white;
+	background-color: var(--grey);
+}
+
+.btn-icon-disabled {
+	opacity: 0.175;
+	fill: white;
+}
+
+/* ---- BODY GRID ---- */
+
+.body-wrapper {
+	display: grid;
+	grid-template-columns: 270px 1fr 55px;
+	grid-template-rows: auto calc(100vh - 64px);
+	overflow: hidden;
+}
