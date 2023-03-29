@@ -481,3 +481,81 @@ input[type="search"]::-webkit-search-cancel-button {
 	font-size: 0.75rem;
 	user-select: none;
 }
+
+/* ==== Gerardo HEADER ==== */
+
+.header {
+	display: grid;
+	grid-template-columns: 256px 1fr min-content;
+	justify-content: space-between;
+	align-items: center;
+	grid-column-gap: 12px;
+	height: 64px;
+	padding: 0.15rem;
+	background-color: var(--background);
+	grid-column: 1 / -1;
+}
+#header-search-options{
+	background-color: var(--grey);
+}	
+.header-group {
+	display: flex;
+	align-items: center;
+	margin: 0 6px;
+}
+
+.header-search {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 720px;
+	background-color: var(--grey);
+	border-radius: 8px;
+	padding: 3px 8px;
+
+	transition: box-shadow 150ms ease;
+}
+
+.header-search:focus-within {
+	background-color: var(--light-grey);
+
+	box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+
+.btn[type="reset"] {
+	display: none;
+}
+
+.header-search:focus-within .btn[type="reset"] {
+	display: flex;
+}
+
+.header-search-input {
+	display: block;
+	font-family: var(--font);
+	font-size: var(--font-m);
+	font-weight: 400;
+	background-color: transparent;
+	width: 100%;
+	padding: 4px;
+	border: none;
+	outline: none;
+}
+
+#header-profile {
+	height: 40px;
+	width: 40px;
+}
+
+.header-profile {
+	height: 32px;
+	width: 32px;
+	opacity: 1;
+}
+
+#header-menu {
+	width: 48px;
+	height: 48px;
+	margin: 4px;
+}
