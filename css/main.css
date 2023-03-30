@@ -236,14 +236,15 @@ input[type="search"]::-webkit-search-cancel-button {
 	color: white;
 	font-weight: 600;
 	background-color: var(--light-grey);
-	margin-right: 18px;
-
+	
 }
 .category-item-icon {
 	width: 20px;
 	margin-right: 18px;
 	opacity: var(--opacity);
 	fill: white;
+	background-color: var(--background);
+
 }
 
 .category-item-icon-active {
